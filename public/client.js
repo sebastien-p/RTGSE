@@ -3,9 +3,8 @@
  *
  * Copyright (c) 2011 Sebastien P.
  *
+ * http://rtgse.nodester.com/
  * http://twitter.com/_sebastienp
- * http://github.com/sebastien-p/jquery.hasEventListener
- * http://jsfiddle.net/sebastienp/eHGqB/
  *
  * MIT licensed.
 */

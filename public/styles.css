@@ -1,16 +1,3 @@
-/*!
- * RTGSE (Real Time Geolocation Sharing Experiment) using Websockets, Google Maps and NodeJS.
- *
- * Copyright (c) 2011 Sebastien P.
- *
- * http://twitter.com/_sebastienp
- * http://github.com/sebastien-p/jquery.hasEventListener
- * http://jsfiddle.net/sebastienp/eHGqB/
- *
- * MIT licensed.
-*/
-
-
 html,
 body,
 #map {
