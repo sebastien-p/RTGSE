@@ -74,7 +74,7 @@ $(function () {
 			nickname = $("#nickname").val(),
 			has_geolocation = function (position) {
 
-				console.log(position);
+				console.log("test" + position);
 
 				position.coords && (position = position.coords);
 
