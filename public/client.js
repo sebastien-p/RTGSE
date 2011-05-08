@@ -78,7 +78,7 @@ $(function () {
 				set_map_marker(you, "home");
 				$dialog.dialog("destroy").remove();
 				socket.send(you);
-console.log(position.latitude);
+console.log(socket.transport.sessionid);
 			},
 			no_geolocation = function (error) {
 
