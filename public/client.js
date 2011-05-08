@@ -39,6 +39,9 @@ $(function () {
 
 			window.setTimeout(function () { marker.setAnimation(null); }, 5E3);
 
+			console.log(user);
+			console.log(markers);
+
 		},
 		socket = (new io.Socket(location.hostName)).on("message", function (message) {
 
