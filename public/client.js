@@ -21,6 +21,8 @@ $(function () {
 		markers = {},
 		set_map_marker = function (user, icon) {
 
+			console.log(user.coords);
+
 			var position = get_coords(user.coords),
 				marker = markers[user.id] = new google_maps.Marker({
 					animation: google_maps.Animation.BOUNCE,
@@ -39,7 +41,6 @@ $(function () {
 
 			window.setTimeout(function () { marker.setAnimation(null); }, 5E3);
 
-			console.log(user);
 			console.log(markers);
 
 		},
@@ -78,7 +79,7 @@ $(function () {
 				var you = { coords: position, id: socket.transport.sessionid, type: "connect", user: nickname };
 
 				map.setCenter(get_coords(position));
-				map.setZoom(5);
+				//map.setZoom(5);
 				set_map_marker(you, "home");
 				$dialog.dialog("destroy").remove();
 				socket.send(you);
