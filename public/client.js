@@ -11,7 +11,7 @@
 
 
 // https://github.com/douglascrockford/JSON-js/blob/master/json2.js
-if (!(JSON && (typeof JSON.stringify === "function"))) {
+if (!(window.JSON && (typeof JSON.stringify === "function"))) {
 
 	window.JSON = {
 		stringify: function (value, replacer, space) {
