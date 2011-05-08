@@ -74,12 +74,13 @@ $(function () {
 			nickname = $("#nickname").val(),
 			has_geolocation = function (position) {
 
+				console.log(position);
+
 				position.coords && (position = position.coords);
 
 				var you = { coords: position, id: socket.transport.sessionid, type: "connect", user: nickname };
 
 				map.setCenter(get_coords(position));
-				//map.setZoom(5);
 				set_map_marker(you, "home");
 				$dialog.dialog("destroy").remove();
 				socket.send(you);
