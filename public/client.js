@@ -47,7 +47,7 @@ $(function () {
 		socket = (new io.Socket(location.hostName)).on("message", function (message) {
 
 			message = $.parseJSON(message);
-
+console.log(message);
 			var user;
 
 			switch (message.type) {
@@ -73,8 +73,6 @@ $(function () {
 		var geolocation = navigator && navigator.geolocation,
 			nickname = $("#nickname").val(),
 			has_geolocation = function (position) {
-
-				console.log("test" + position);
 
 				position.coords && (position = position.coords);
 
