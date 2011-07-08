@@ -26,7 +26,9 @@ app.get("/", function (req, res) {
 
     res.render("./public/index.html");
 
-}).listen(9880);
+});
+
+app.listen(9880);
 
 io.listen(app).on("connection", function (client) {
 
